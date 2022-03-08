@@ -12,14 +12,7 @@
             <h></h>
             @foreach($pizzas as $pizza)
             <div>
-                <p>{{$loop->index}} {{$pizza['type']}}-{{$pizza['base']}}
-                    @if($loop->first)
-                    <span> - first in the loop</span>
-                    @endif
-                    @if($loop->last)
-                    <span> - lasr in the loop</span>
-                    @endif
-                </p>
+                {{$pizza->name}} - {{$pizza->type}} - {{$pizza->base}}
             </div>
             @endforeach
         </div>
