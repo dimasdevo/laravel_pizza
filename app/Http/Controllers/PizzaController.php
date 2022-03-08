@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class PizzaController extends Controller
 {
+    //controller
     public function index(){
         $data = [
             ['type'=>'hawaiian','base'=>'cheesy crust'],
