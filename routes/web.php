@@ -28,6 +28,6 @@ Route::delete('/pizzas/{id}', [PizzaController::class,'destroy'])->middleware('a
 
 Route::post('/pizzas', [PizzaController::class,'store'])->name('pizzas.store');
 
-Auth::routes(['register'=>false]);
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
